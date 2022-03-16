@@ -12,7 +12,7 @@ of Simple CSS Waves-->
 
 
 <div class="header">
-    <h1 class="inner-header flex">Game Of Thrones</h1>
+    <h1 class="inner-header flex"  style="padding-top: 20px;">Game Of Thrones</h1>
     <div class="container">
         <div class="row r1" style="justify-content: space-between;" *ngFor="let character of characters; let i = index">
             <div class="col-100">
@@ -20,7 +20,7 @@ of Simple CSS Waves-->
                     <div class="card-body">
                         <mat-expansion-panel hideToggle  class="description imageback" [ngStyle]="{'background-image': 'url(' + character.imageUrl + ')'}">
                             <mat-expansion-panel-header class="panelheader">
-                              <mat-panel-title>
+                              <mat-panel-title class="nameheader">
                                 {{character.fullName}}
                               </mat-panel-title>
                               <mat-panel-description class="description" >
